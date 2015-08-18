@@ -1,0 +1,62 @@
+/*--------------------------------------------------------------------------------------------
+Project Name - Portfolio site of Christos Tsakmakis
+DATE - August 17, 2015
+AUTHOR - Christos Tsakmakis
+--------------------------------------------------------------------------------------------*/
+
+body {
+	background: #f9f8f4 none repeat scroll 0 0;
+    color: #a09a90;
+    font-family: helvetica,arial,sans-serif;
+    font-weight: normal;
+    letter-spacing: 0.03em;
+}
+
+a {
+    color: #995f37;
+    text-decoration: none;
+    transition: all 0.6s ease 0s;
+}
+
+.wrap-banner {
+    background: #f9f8f4 none repeat scroll 0 0 !important;
+    border-bottom: 1px solid #d4d0cb;
+    border-top: 3px solid #51493d;
+    color: #51493d;
+    display: block;
+    overflow: hidden;
+    padding: 1rem 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 20;
+    text-transform: uppercase;
+}
+
+.logo-site a {
+    display: inline-block;
+}
+
+.logo-site a span {
+    color: #171818;
+    display: inline-block;
+    font-family: "Montserrat",sans-serif;
+    font-size: 1.25rem;
+    letter-spacing: -0.02rem;
+    line-height: 1;
+    margin-top: 0.52rem;
+}
+
+.logo-site img {
+    transform: rotate(-135deg);
+    margin-right: 10px;
+}
+
+.nav-bar {
+	font-family: "Montserrat",sans-serif;
+    font-size: 1rem;
+}
+
+.copyright p {
+	font-size: 0.6rem;
+}
