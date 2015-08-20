@@ -13,24 +13,40 @@ body {
 }
 
 a {
-    color: #995f37;
     text-decoration: none;
     transition: all 0.6s ease 0s;
 }
 
+
+/* Banner */
 .wrap-banner {
     background: #f9f8f4 none repeat scroll 0 0 !important;
     border-bottom: 1px solid #d4d0cb;
-    border-top: 3px solid #51493d;
     color: #51493d;
     display: block;
+    max-width: 100%;
     overflow: hidden;
-    padding: 1rem 0;
     position: fixed;
+    text-transform: uppercase;
     top: 0;
     width: 100%;
     z-index: 20;
-    text-transform: uppercase;
+}
+
+.wrap-banner .columns {
+    margin-bottom: 1.5em;
+    margin-top: 1.5em;
+    transition: all 0.6s ease 0s;
+}
+
+.fixed .columns {
+    height: auto;
+    margin: 0.15em 0;
+}
+
+/* Banner Logo */
+.logo-site {
+    
 }
 
 .logo-site a {
@@ -38,25 +54,118 @@ a {
 }
 
 .logo-site a span {
-    color: #171818;
+	color: #51493d;
     display: inline-block;
     font-family: "Montserrat",sans-serif;
     font-size: 1.25rem;
     letter-spacing: -0.02rem;
     line-height: 1;
-    margin-top: 0.52rem;
+    margin-top: 1.52rem;
+    position: absolute;
 }
 
 .logo-site img {
     transform: rotate(-135deg);
-    margin-right: 10px;
+    margin-right: 1.2rem;
 }
+
+@keyframes fadeInDown {
+	0% {
+	    opacity: 0;
+	    transform: translate3d(0px, -100%, 0px);
+	}
+	100% {
+	    opacity: 1;
+	    transform: none;
+	}
+}
+
+.fadeInDown {
+    animation-name: fadeInDown;
+}
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+
+
+
+/* Banner Navigation Bar */
 
 .nav-bar {
 	font-family: "Montserrat",sans-serif;
     font-size: 1rem;
+    padding: 12px 10px 0;
+}
+
+.nav-bar .button {
+	font-weight: 600;
+    margin: 0;
+    /*padding: 1.5rem 2rem 1.0625rem 0;*/
+}
+
+
+button, .button {
+	background: #f9f8f4 none repeat scroll 0 0;
+    color: #a2a2a2;
+}
+
+button:hover, button:focus, .button:hover, .button:focus {
+	background: #f9f8f4  none repeat scroll 0 0;
+    color: #008cba;
+}
+
+.button-group > li > button, .button-group > li .button {
+    border-color: rgba(255, 255, 255, 0.5);
+    border-left: 0 none;
+}
+
+
+
+
+/* Masthead */
+.wrap-masthead {
+	background: rgba(0, 0, 0, 0) url("../img/bg-masthead.png") no-repeat scroll center center / cover ;
+    margin-top: 7.6em;
+    text-align: center;
+    padding: 0 60px;
+}
+
+.wrap-masthead h1 {
+    color: #51493d;
+    font-size: 2.00rem;
+    font-weight: bold;
+    letter-spacing: 0.0875em;
+    padding-bottom: 30px;
+    padding-top: 20px;
+}
+
+/* About */
+.wrap-about {
+	padding: 2rem 0;
+	text-align: center;
+}
+
+
+/* Footer */
+
+footer {
+    background: #212121 none repeat scroll 0 0;
+    border-color: #ff7200;
+    border-top-style: solid;
+    border-top-width: 5px;
+    max-width: 100%;
+    padding: 20px 30px;
 }
 
 .copyright p {
 	font-size: 0.6rem;
+}
+
+
+/* Fonts */
+
+.size-36 {
+    font-size: 36px;
 }
