@@ -15,6 +15,9 @@ body {
 a {
     text-decoration: none;
     transition: all 0.6s ease 0s;
+  	-moz-transition: all 0.6s ease 0s; /* Firefox 4 */
+  	-webkit-transition: all 0.6s ease 0s; /* Safari and Chrome */
+  	-o-transition: all 0.6s ease 0s; /* Opera */
 }
 
 
@@ -31,12 +34,20 @@ a {
     top: 0;
     width: 100%;
     z-index: 20;
+	/*top: 0;
+	left: 0;
+	right: 0;
+	http://salomvary.github.io/position-fixed-horizontally-centered.html
+	*/
 }
 
 .wrap-banner .columns {
     margin-bottom: 1.5em;
     margin-top: 1.5em;
     transition: all 0.6s ease 0s;
+  	-moz-transition: all 0.6s ease 0s; /* Firefox 4 */
+  	-webkit-transition: all 0.6s ease 0s; /* Safari and Chrome */
+  	-o-transition: all 0.6s ease 0s; /* Opera */
 }
 
 .fixed .columns {
@@ -126,10 +137,12 @@ button:hover, button:focus, .button:hover, .button:focus {
 
 /* Masthead */
 .wrap-masthead {
-	background: rgba(0, 0, 0, 0) url("../img/bg-masthead.png") no-repeat scroll center center / cover ;
-    margin-top: 7.6em;
+	background: rgba(0, 0, 0, 0) url("") no-repeat scroll center center / cover ;
+	/*background: rgba(0, 0, 0, 0) url("../img/bg-masthead.png") no-repeat scroll center center / cover ;*/
+    /*margin: 7.6em auto 0 auto;*/
+    max-width: 100%;
+    padding: 7.6em 60px 1rem 60px;
     text-align: center;
-    padding: 0 60px;
 }
 
 .wrap-masthead h1 {
@@ -139,6 +152,7 @@ button:hover, button:focus, .button:hover, .button:focus {
     letter-spacing: 0.0875em;
     padding-bottom: 30px;
     padding-top: 20px;
+    text-shadow: 1px 1px 1px #000;
 }
 
 /* About */
