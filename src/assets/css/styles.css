@@ -161,6 +161,22 @@ button:hover, button:focus, .button:hover, .button:focus {
 	text-align: center;
 }
 
+/*.wrap-about img {
+	border-radius: 80px;
+}*/
+
+/* Work */
+.wrap-work {
+	padding: 2rem 0;
+	text-align: center;
+}
+
+/* Contact */
+.wrap-contact {
+	padding: 2rem 0;
+	text-align: center;
+}
+
 
 /* Footer */
 
