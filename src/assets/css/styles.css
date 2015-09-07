@@ -180,13 +180,10 @@ button:hover, button:focus, .button:hover, .button:focus {
 
 /* Footer */
 
-footer {
+footer.row {
     background: #212121 none repeat scroll 0 0;
-    border-color: #ff7200;
-    border-top-style: solid;
-    border-top-width: 5px;
     max-width: 100%;
-    padding: 20px 30px;
+    padding: 20px 0;
 }
 
 .copyright p {
